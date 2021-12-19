@@ -1,0 +1,24 @@
+.slider {
+  width: 100%;
+  min-height: size-desktop(576px);
+
+  @include vp--1439 {
+    min-height: 576px;
+  }
+
+  .swiper-slide {
+    height: size-desktop(576px);
+    background-repeat: no-repeat;
+    background-position: bottom 45% center;
+    cursor: pointer;
+
+    @include vp--1439 {
+      height: 576px;
+    }
+  }
+}
+
+.slider-container {
+  position: relative;
+  height: 100%;
+}

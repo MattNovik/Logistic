@@ -11,6 +11,7 @@ $color-transparent:               rgba(255, 255, 255, 0);
 // Base
 
 $color-blue:                      #2c39f2;
+$color-chartreuse-yellow:         #d6f80b;
 
 // Gradient
 
@@ -22,7 +23,8 @@ $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0
 $font-family--placeholder:          "", "Arial", sans-serif;
 
 // https://www.artlebedev.ru/kovodstvo/sections/159/
-$font-family--rouble:               "Rouble", "Arial", sans-serif;
+$font-family--roboto:               "Roboto", "Arial", sans-serif;
+$font-family--oswald:               "Oswald", "Arial", sans-serif;
 
 // Animation
 //---------------------------------
@@ -40,6 +42,8 @@ $vp--1024:                          1024px;
 $vp--1280:                          1280px;
 $vp--1440:                          1440px;
 $vp--1920:                          1920px;
+
+$viewport--resize:                  1440px;
 
 // Retina
 //---------------------------------

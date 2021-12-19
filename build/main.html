@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Logistic</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="ProjectName — описание">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <div class="visually-hidden"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-close" viewBox="0 0 20 20"><path d="M.293 18.291a1 1 0 101.414 1.414L10 11.413l8.292 8.292a1 1 0 101.414-1.414l-8.292-8.292 8.292-8.292A1 1 0 1018.291.293L9.999 8.585 1.707.293A1 1 0 10.293 1.707L8.585 10 .293 18.291z"/></symbol></svg></div>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__wrapper"><a class="header__logo">Логотип</a>
+          <nav class="main-nav">
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list">
+                <li class="main-nav__item"><a class="main-nav__link" href="#">Главная</a>
+                </li>
+                <li class="main-nav__item"><a class="main-nav__link" href="#">О нас</a>
+                </li>
+                <li class="main-nav__item"><a class="main-nav__link" href="#">услуги</a>
+                </li>
+                <li class="main-nav__item"><a class="main-nav__link" href="#">контакты</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <div class="container">
+          <section class="slider">
+            <div class="slider-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url('img/content/slider/bg5.jpg'); background-size: cover"></div>
+                <div class="swiper-slide" style="background-image: url('img/content/slider/bg2.jpg'); background-size: cover"></div>
+                <div class="swiper-slide" style="background-image: url('img/content/slider/bg3.jpg'); background-size: cover"></div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </section>
+          <section class="common-info">
+            <div class="common-info__container">
+              <div class="common-info__design"></div>
+              <div class="common-info__info">
+                <h1>«АМГ-ФОРВАРДИНГ» – логистическая Компания в России</h1>
+                <p>Специалисты логистической Компании «АМГ-ФОРВАРДИНГ» знают, как организовать перевозки во все регионы России. Мы предлагаем не только отдельные услуги, но также организовываем комплексные работы. Мы не только динамично развивающаяся компания, но и команда профессионалов логистики.</p>
+                <p>Мы стремимся к постоянному развитию, регулярно расширяя перечень предлагаемых услуг.
+ Уже сейчас вы можете обратиться к специалистам «АМГ-ФОРВАРДИНГ», чтобы заказать
+ логистические услуг по международным перевозкам. Мы предложим комплексные решения
+ для ваших задач.</p>
+              </div>
+            </div>
+          </section>
+          <div class="world-map-wrapper">
+            <section class="modules-types">
+              <div class="modules-types__container">
+                <div class="modules-types__list">
+                  <li class="modules-types__item"><a class="modules-types__link" href="#">
+                      <picture>
+                        <source type="image/webp" srcset="img/content/train.webp, img/content/train@2x.webp 2x"><img src="img/content/train.jpg" srcset="img/content/train@2x.jpg 2x" width="244" height="373" alt="train">
+                      </picture>
+                      <p>Ж/Д ПЕРЕВОЗКИ</p></a></li>
+                  <li class="modules-types__item"><a class="modules-types__link" href="#">
+                      <picture>
+                        <source type="image/webp" srcset="img/content/air.webp, img/content/air@2x.webp 2x"><img src="img/content/air.jpg" srcset="img/content/air@2x.jpg 2x" width="244" height="373" alt="air">
+                      </picture>
+                      <p>АВИАПЕРЕВОЗКИ</p></a></li>
+                  <li class="modules-types__item"><a class="modules-types__link" href="#">
+                      <picture>
+                        <source type="image/webp" srcset="img/content/water.webp, img/content/water@2x.webp 2x"><img src="img/content/water.jpg" srcset="img/content/water@2x.jpg 2x" width="244" height="373" alt="water">
+                      </picture>
+                      <p>МОРСКИЕ ПЕРЕВОЗКИ</p></a></li>
+                </div>
+              </div>
+            </section>
+            <section class="feedback">
+              <div class="feedback__container">
+                <div class="feedback__info-block">
+                  <h2>НАПИШИТЕ НАМ!</h2>
+                  <p>Для заказа перевозки грузов вполне достаточно нам написать или позвонить. Точно указанные сведения – а это габариты груза, его характеристики и вес, количество мест, пункты назначения и отправки – помогут специалисту просчитать действительно оптимальные варианты его доставки.</p>
+                </div>
+                <div class="feedback__form-wrapper" data-validate>
+                  <form action="#" method="POST">
+                    <div class="feedback__form-items-wrapper">
+                      <div class="feedback__item" data-validate-type="text">
+                        <label>
+                          <input type="text" name="user-name" placeholder="Имя*" required><span class="feedback__label"><span class="feedback__label-error">Некорректный формат данных</span></span>
+                        </label>
+                      </div>
+                      <div class="feedback__item" data-validate-type="phone">
+                        <label>
+                          <input type="tel" name="telephone" placeholder="Телефон*" required><span class="feedback__label"><span class="feedback__label-error">Некорректный формат данных</span></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="feedback__item" data-validate-type="text">
+                      <label>
+                        <textarea name="text" cols="30" rows="10" placeholder="Введите ваше сообщение...*" required></textarea><span class="feedback__label"><span class="feedback__label-error">Некорректный формат данных</span></span>
+                      </label>
+                    </div>
+                    <button class="btn-reset button feedback__submit-btn" type="submit"><span>Написать</span>
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__design"></div>
+          <div class="footer__contacts">
+            <h2>контакты</h2><a class="footer__adress" href="#">Адресс: 196084, Санкт-Петербург г, Московский пр-кт, дом 97, литер А, помещение 7-Н, офис 402</a><a class="footer__tel" href="tel:+79117759145">Тел. +7 (911) 775-91-45</a><a class="footer__email" href="mailto:amgforw@gmail.com">Email: amgforw@gmail.com</a>
+          </div>
+          <div class="footer__map"><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2001.3312368545098!2d30.315665416318!3d59.89345138185976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963069214f8573%3A0xfacc04c89ed28c7b!2z0JzQvtGB0LrQvtCy0YHQutC40Lkg0L_RgC3Rgi4sIDk3LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTk2MDg0!5e0!3m2!1sru!2sru!4v1639924694722!5m2!1sru!2sru' style='border:0;' allowfullscreen='' loading='lazy'></iframe>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

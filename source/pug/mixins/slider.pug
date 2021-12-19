@@ -1,0 +1,7 @@
+mixin slider(data)
+  section.slider
+      .slider-container
+        .swiper-wrapper
+          each slide, index in data
+            .swiper-slide(style="background-image: url('img/" + slide.path +"/" + slide.name + "." + slide.format + "'); background-size: cover")
+        .swiper-pagination

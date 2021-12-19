@@ -2,13 +2,14 @@
 //---------------------------------
 
 @import "vendor/normalize";
-// @import "vendor/swiper";
+@import "vendor/swiper";
 
 // Global
 //---------------------------------
 
 @import "variables";
 @import "mixins";
+@import "functions";
 @import "global/fonts";
 @import "global/reboot";
 @import "global/utils";
@@ -21,7 +22,11 @@
 @import "blocks/main-nav";
 @import "blocks/footer";
 @import "blocks/modal";
-
+@import "blocks/slider";
+@import "blocks/common-info";
+@import "blocks/modules-types";
+@import "blocks/feedback";
+@import "blocks/world-map-wrapper";
 
 // используйте это для отключения ховеров на тач устройствах
 // ! но не используйте это для текстовых полей ( input, textarea )

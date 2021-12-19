@@ -1,0 +1,97 @@
+.common-info {
+  padding: 0 size-desktop(155px) 0 size-desktop(98px);
+  background-color: $color-default-black;
+
+  @include vp--1439 {
+    padding: 0 155px 0 98px;
+  }
+
+  &__design {
+    position: relative;
+    min-height: 100%;
+    min-width: size-desktop(82px);
+    margin: 0 size-desktop(65px) 0 0;
+    border-left: solid size-desktop(15px) $color-default-white;
+    border-right: solid size-desktop(15px) $color-chartreuse-yellow;
+
+    @include vp--1439 {
+      min-width: 82px;
+      margin: 0 65px 0 0;
+      border-left: solid 15px $color-default-white;
+      border-right: solid 15px $color-chartreuse-yellow;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 10%;
+      right: 100%;
+      transform: rotate(270deg);
+      width: size-desktop(88px);
+      height:  size-desktop(66px);
+      background-image: url("../img/svg/cargo-ship.png");
+      background-size: cover;
+      z-index: 10;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 10%;
+      left: 100%;
+      transform: rotate(90deg);
+      width: size-desktop(88px);
+      height:  size-desktop(66px);
+      background-image: url("../img/svg/cargo-ship.png");
+      background-size: cover;
+      z-index: 10;
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-self: flex-start;
+  }
+
+  h1 {
+    padding: size-desktop(45px) 0 0 0;
+    margin: 0 0 size-desktop(45px);
+    color: $color-default-white;
+    font-family: $font-family--oswald;
+    font-weight: bold;
+    font-size: size-desktop(36px);
+    line-height: size-desktop(53px);
+
+    @include vp--1439 {
+      padding: 45px 0 0 0;
+      margin: 0 0 45px;
+      font-size: 36px;
+      line-height: 53px;
+    }
+  }
+
+  p {
+    padding: 0;
+    margin: 0 0 size-desktop(45px);
+    color: $color-default-white;
+    font-family: $font-family--roboto;
+    font-weight: 500;
+    font-size: size-desktop(18px);
+    line-height: size-desktop(30px);
+    white-space: pre-line;
+
+    &:last-of-type {
+      margin: 0 0 size-desktop(103px);
+    }
+
+    @include vp--1439 {
+      margin: 0 0 45px;
+      font-size: 18px;
+      line-height: 30px;
+
+      &:last-of-type {
+        margin: 0 0 103px;
+      }
+    }
+  }
+}

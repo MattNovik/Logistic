@@ -4,6 +4,8 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 
 import {initModals} from './modules/modals/init-modals';
+import {initPhotosSlider} from './modules/init-slider-photos';
+import {initFormValidate} from './modules/init-form-validate';
 
 // ---------------------------------
 
@@ -18,6 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // polyfillObjectFit();
 
   iosVhFix();
+  initPhotosSlider();
 
   // Modules
   // ---------------------------------
@@ -26,6 +29,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initModals();
+    initFormValidate();
   });
 });
 

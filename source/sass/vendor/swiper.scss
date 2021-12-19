@@ -21,6 +21,22 @@
   --swiper-theme-color: #007aff;
 }
 
+.slider {
+  .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: #fff;
+  }
+
+  .swiper-container-horizontal > .swiper-pagination {
+    bottom: 20px;
+  }
+}
+
 .swiper-notification {
   display: none !important;
 }

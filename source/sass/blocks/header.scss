@@ -1,32 +1,33 @@
 .header {
   display: flex;
   align-items: center;
-  min-height: 100px;
-  padding: 0 40px;
-
+  padding: 0 size-desktop(98px) size-desktop(50px);
   background-color: $color-default-black;
+
+  @include vp--1439 {
+    padding: 0 98px 0 50px;
+  }
 
   &__wrapper {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: size-desktop(20px) 0 size-desktop(30px);
+
+    @include vp--1439 {
+      padding: 20px 0 30px;
+    }
   }
 
-  a,
-  p {
-    color: $color-default-white;
-  }
+  &__logo {
+    min-height: size-desktop(77px);
+    width: size-desktop(246px);
+    background-color: $color-default-white;
 
-  ul {
-    display: flex;
-    margin: 0;
-    margin-right: 20px;
-    margin-left: 60px;
-    padding: 0;
-
-    list-style: none;
-
-    li {
-      margin-right: 20px;
+    @include vp--1439 {
+      min-height: 77px;
+      width: 246px;
     }
   }
 }

@@ -1,2 +1,11 @@
-mixin footer(footerMods)
+mixin footer(data, footerMods)
   footer.footer(class=footerMods)
+    .footer__container
+      .footer__design
+      .footer__contacts
+          h2 контакты
+          a.footer__adress(href="#")!= data.adress
+          a.footer__tel(href="tel:" + data.telType)!= data.tel
+          a.footer__email(href="mailto:" + data.mailType)!= data.mail
+      .footer__map
+        != data.map
