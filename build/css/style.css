@@ -3121,6 +3121,10 @@ button,
     padding: 46px 0;
   }
 
+  .modules-types__item {
+    margin: 0;
+  }
+
   .feedback {
     padding: 0 16px;
     background-color: rgba(8, 25, 51, 0.42);
