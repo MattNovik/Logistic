@@ -1,5 +1,5 @@
 mixin feedback(data)
-  section.feedback
+  section.feedback#order
     .feedback__container
       .feedback__info-block
         h2!= data.title
@@ -22,4 +22,6 @@ mixin feedback(data)
               textarea(name="text", cols="30", rows="10", placeholder="Введите ваше сообщение...*",  required)
               span.feedback__label
                 span.feedback__label-error Некорректный формат данных
-          +button({mod: "feedback__submit-btn", content: "Написать", type: "submit"})
+          button.button.feedback__submit-btn(type="submit" data-open-modal="modal-message") Написать
+  +modal("modal--message modal--no-scale modal--translate")(data-modal="modal-message")
+        +modal-message()

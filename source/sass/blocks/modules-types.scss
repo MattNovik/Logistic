@@ -6,6 +6,14 @@
     padding: 0 98px;
   }
 
+  @include vp--1023 {
+    padding: 0 50px;
+  }
+
+  @include vp--767 {
+    padding: 0 16px;
+  }
+
   &__container {
     display: flex;
     align-items: center;
@@ -15,6 +23,15 @@
     @include vp--1439 {
       padding: 87px 0 63px;
     }
+
+    @include vp--1023 {
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    @include vp--767 {
+      padding: 46px 0;
+    }
   }
 
   &__list {
@@ -23,9 +40,20 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     list-style-type: none;
+
+    @include vp--1279 {
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    @include vp--1023 {
+      justify-content: center;
+      row-gap: 20px;
+    }
   }
 
   &__item {
+    position: relative;
     width: size-desktop(244px);
     height: size-desktop(433px);
     text-align: center;
@@ -38,6 +66,27 @@
       margin: 0 87px 0 0;
     }
 
+    @include vp--1279 {
+      margin: 0 30px 0 0;
+    }
+
+    @include vp--1023 {
+      width: 300px;
+      margin: 0;
+
+      &:first-of-type {
+        margin: 0 auto 0 0;
+      }
+
+      &:nth-child(2n + 3) {
+        margin: 0 auto 0 0;
+      }
+
+      &:last-of-type {
+        margin: 0;
+      }
+    }
+
     &:last-of-type {
       margin: 0;
     }
@@ -46,10 +95,16 @@
       width: 100%;
       height: size-desktop(373px);
       margin: 0 0 size-desktop(15px);
+      border-radius: 10px;
 
       @include vp--1439 {
         height: 373px;
         margin: 0 0 15px;
+      }
+
+      @include vp--1023 {
+        width: 300px;
+        height: 373px;
       }
     }
 
@@ -65,6 +120,57 @@
       @include vp--1439 {
         font-size: 26px;
         line-height: 39px;
+      }
+    }
+
+    &:hover {
+      .modules-types__item-info {
+        opacity: 1;
+        transform: translate(20%, 0);
+      }
+    }
+
+    @include vp--1023 {
+      .modules-types__item-info--open {
+        opacity: 1;
+        transform: translate(20%, 0);
+      }
+    }
+  }
+
+  &__item-info {
+    pointer-events: none;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 100%;
+    transform: translate(100%, 0);
+    transition: transform $trans--600, opacity $trans--600;
+    background-color: rgba($color-default-white, .7);
+    box-shadow: -24px 0px 8px 3px rgba($color-default-white, .7);
+
+    h2 {
+      font-size: size-desktop(27px);
+      line-height: size-desktop(38px);
+    }
+
+    p {
+      text-align: left;
+      font-size: size-desktop(16px);
+      line-height: size-desktop(20px);
+    }
+
+    @include vp--1439 {
+      h2 {
+        font-size: 27px;
+        line-height: 38px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 20px;
       }
     }
   }

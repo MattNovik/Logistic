@@ -6,6 +6,10 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {initPhotosSlider} from './modules/init-slider-photos';
 import {initFormValidate} from './modules/init-form-validate';
+import {initMoveTo} from './modules/init-move-to';
+import {initOpenMenu} from './modules/init-menu-open';
+import {initServicesInfo} from './modules/init-services-info';
+
 
 // ---------------------------------
 
@@ -21,6 +25,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   iosVhFix();
   initPhotosSlider();
+  initOpenMenu();
 
   // Modules
   // ---------------------------------
@@ -30,6 +35,8 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initModals();
     initFormValidate();
+    initMoveTo();
+    initServicesInfo();
   });
 });
 

@@ -3,5 +3,6 @@ mixin slider(data)
       .slider-container
         .swiper-wrapper
           each slide, index in data
-            .swiper-slide(style="background-image: url('img/" + slide.path +"/" + slide.name + "." + slide.format + "'); background-size: cover")
+            .swiper-slide
+              +picture(slide.path, slide.name, slide.format, slide.width, slide.height, slide.altText)
         .swiper-pagination
