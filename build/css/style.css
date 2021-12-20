@@ -1982,7 +1982,7 @@ button,
   transform: translate(-30%, 0);
   width: 25.90278vw;
   height: 12.63889vw;
-  background-image: url("../../img/content/bg7.jpg");
+  background-image: url("../img/content/bg7.jpg");
   background-size: cover;
   border-radius: 20px;
   z-index: 5;
@@ -1997,7 +1997,7 @@ button,
   right: 2.43056vw;
   width: 25.90278vw;
   height: 12.63889vw;
-  background-image: url("../../img/content/bg4.jpg");
+  background-image: url("../img/content/bg4.jpg");
   background-size: cover;
   border-radius: 20px;
   z-index: 5;
@@ -2232,7 +2232,7 @@ button,
 
 .world-map-wrapper {
   position: relative;
-  background-image: url("../../img/content/undercoverDesk.png");
+  background-image: url("../img/content/undercoverDesk.png");
   background-size: contain;
 }
 
