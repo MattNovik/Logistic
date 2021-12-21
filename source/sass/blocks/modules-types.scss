@@ -89,6 +89,15 @@
 
     @include vp--767 {
       margin: 0;
+
+
+      &:first-of-type {
+        margin: 0;
+      }
+
+      &:nth-child(2n + 3) {
+        margin: 0;
+      }
     }
 
     &:last-of-type {

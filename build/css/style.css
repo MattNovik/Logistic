@@ -3125,6 +3125,14 @@ button,
     margin: 0;
   }
 
+  .modules-types__item:first-of-type {
+    margin: 0;
+  }
+
+  .modules-types__item:nth-child(2n + 3) {
+    margin: 0;
+  }
+
   .feedback {
     padding: 0 16px;
     background-color: rgba(8, 25, 51, 0.42);
