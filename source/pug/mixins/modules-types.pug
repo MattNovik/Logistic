@@ -4,9 +4,9 @@ mixin modulesTypes(data)
       .modules-types__list
         each item, index in data
           li.modules-types__item
-            a.modules-types__link(href=item.link)
+            .modules-types__link(href=item.link)
               +picture(item.path, item.name, item.format, item.width, item.height, item.altText)
               p!=item.title
               .modules-types__item-info
-                h4 Общая информация
-                p Этот вид перевозок является также самым дешевым. Большим недостатком этого вида перевозки является сложности в размещении портов, больших затратах на организацию и сопровождение грузов, а также медленное движение морского транспорта.
+                h4!=item.infoTitle
+                p!=item.info
